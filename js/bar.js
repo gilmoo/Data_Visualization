@@ -1,5 +1,5 @@
 var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-	width = 960 - margin.left - margin.right + 370,
+	width = margin.left - margin.right + 370,
 	height = 500 - margin.top - margin.bottom + 100;
 
 var svg3 = d3.select("#chartFilter").append("svg")
