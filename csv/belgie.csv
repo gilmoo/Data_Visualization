@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 3,1489,9997,8342,2,1,1,2015/2016,Sint-Truidense VV,Club Brugge KV
 3,1490,8571,9985,2,1,1,2015/2016,KV Kortrijk,Standard de Liège
 3,1491,9987,1773,3,1,1,2015/2016,KRC Genk,Oud-Heverlee Leuven
