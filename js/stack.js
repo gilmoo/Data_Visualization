@@ -9,6 +9,7 @@ dataset = [];
 d3.csv("csv/duitsland.csv", function(dataset) {
     dataset = dataset.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
     console.log(dataset);
+    return dataset;
 });
 console.log(dataset)
 
