@@ -78,7 +78,7 @@ vis.append("svg:line")
     .attr("y1", h)
     .attr("y2", h);
 
-var legend = vis.selectAll('.legend')
+var legend = vis.selectAll('#chart')
     .data(color.domain())
     .enter()
     .append('g')
