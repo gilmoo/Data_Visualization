@@ -7,7 +7,7 @@ color = d3.interpolateRgb("#aad", "#556");
 dataset = [];
 
 d3.csv("csv/duitsland.csv", function(dataset) {
-    dataset = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
+    dataset = dataset.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
     console.log(dataset);
 });
 console.log(dataset)
