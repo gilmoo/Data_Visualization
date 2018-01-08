@@ -72,7 +72,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 		})
 		.append("title")
 		.text(function (d) {
-			return d.Country + " : " + d[selection];
+			return d.team_long_name/0 + " : " + d[selection];
 		});
 
 	var selector = d3.select("#drop")
