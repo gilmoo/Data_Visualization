@@ -11,7 +11,7 @@ d3.csv("csv/duitsland.csv", function(dataset) {
     console.log(dataset);
     return dataset;
 });
-console.log(dataset)
+dataset = d3.dataset;
 
 
 var p = 20,
