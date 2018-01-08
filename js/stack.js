@@ -68,7 +68,6 @@ vis.append("svg:line")
     .attr("x2", w - x({x: .1}))
     .attr("y1", h)
     .attr("y2", h);
-});
 
 function transitionGroup() {
   var group = d3.selectAll("#chart");
@@ -121,5 +120,5 @@ function transitionStack() {
         .attr("width", x({x: .9}));
   }
 }
-
+});
    
