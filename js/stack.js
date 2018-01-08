@@ -70,6 +70,12 @@ vis.append("svg:line")
 .attr("y1", h)
 .attr("y2", h);
 
+legend = svg.append("g")
+  .attr("class","legend")
+  .attr("transform","translate(50,30)")
+  .style("font-size","12px")
+  .call(d3.legend);
+
 
 function transitionGroup() {
 var group = d3.selectAll("#chart");
