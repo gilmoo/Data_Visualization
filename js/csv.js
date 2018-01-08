@@ -19,7 +19,7 @@ var prices_csv = function()
            // console.log("price:", p, price);
            // return {"month": month, "value":price} ;
         })
-        console.log("data", data)
+       // console.log("data", data)
         bars(data);
     })
 }
