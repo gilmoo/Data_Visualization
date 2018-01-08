@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 1,15416,10228,8526,3,1,13274,2015/2016,SC Heerenveen,De Graafschap
 3,15417,6413,7788,2,2,13274,2015/2016,PEC Zwolle,SC Cambuur
 1,15418,9803,9791,3,1,13274,2015/2016,Roda JC Kerkrade,Heracles Almelo

@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 1,7429,7794,9851,2,1,4769,2015/2016,SC Bastia,Stade Rennais FC
 2,7430,9827,9837,1,2,4769,2015/2016,Girondins de Bordeaux,Stade de Reims
 2,7431,8639,9847,0,1,4769,2015/2016,LOSC Lille,Paris Saint-Germain

@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 2,4389,9825,8654,0,2,1729,2015/2016,Arsenal,West Ham United
 2,4390,8678,10252,0,1,1729,2015/2016,Bournemouth,Aston Villa
 3,4391,8455,10003,2,2,1729,2015/2016,Chelsea,Swansea City

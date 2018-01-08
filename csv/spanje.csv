@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 2,24178,8581,9910,1,2,21518,2015/2016,Levante UD,RC Celta de Vigo
 1,24179,9906,8306,1,0,21518,2015/2016,Atlético Madrid,UD Las Palmas
 3,24180,9864,8302,0,0,21518,2015/2016,Málaga CF,Sevilla FC
