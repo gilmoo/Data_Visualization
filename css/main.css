@@ -119,6 +119,13 @@ a {
     shape-rendering: crispEdges;
   }
 
+  .legend {
+    font-size: 12px;
+  }
+  rect {
+    stroke-width: 2;
+  }
+
 
 .gallery {
     position: center;
