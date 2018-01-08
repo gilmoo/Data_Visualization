@@ -1,88 +1,124 @@
-//Simple d3.js barchart example to illustrate d3 selections
+var margin = { top: 20, right: 180, bottom: 180, left: 15 },
+	width = 960 - margin.left - margin.right + 370,
+	height = 500 - margin.top - margin.bottom + 100;
 
-//other good related tutorials
-//http://www.recursion.org/d3-for-mere-mortals/
-//http://mbostock.github.com/d3/tutorial/bar-1.html
+var svg3 = d3.select("#chartFilter").append("svg")
+	.attr("width", width + margin.left + margin.right)
+	.attr("height", height + margin.top + margin.bottom)
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-var w = 850
-var h = 400
-var bars = function(data)
-{
-
-    max = d3.max(data, function(d) 
-    {
-        return d.value
-    })
-
-    //nice breakdown of d3 scales
-    //http://www.jeromecukier.net/blog/2011/08/11/d3-scales-and-color/
-    y = d3.scale.linear()
-        .domain([0, max])
-        .range([0, h])
-
-    x = d3.scale.ordinal()
-        .domain(d3.range(data.length))
-        .rangeBands([0, w], .2)
+d3.csv("./csv/match_results.csv", function (error, data) {
 
 
-    var vis = d3.select("#barchart")
-    console.log("vis", vis)
-    
-    //a good written tutorial of d3 selections coming from protovis
-    //http://www.jeromecukier.net/blog/2011/08/09/d3-adding-stuff-and-oh-understanding-selections/
-    var bars = vis.selectAll("rect.bar")
-        .data(data)
+	// filter year
+	//var data = data.filter(function(d){return d.Year == '2012';});
+	// Get every column value, and filter
+	var elements = Object.keys(data[0])
+		.filter(function (d) {
+			return ((d != "Region") & (d != "Country") & (d != "Happiness Rank") & (d != "Standard Error"));
+		});
+	var selection = elements[0];
 
-    //update
-    bars
-        .attr("fill", "#0a0")
-        .attr("stroke", "#050")
+	var y = d3.scale.linear()
+		.domain([0, d3.max(data, function (d) {
+			return +d[selection];
+		})])
+		.range([height, 0]);
 
-    //enter
-    bars.enter()
-        .append("svg:rect")
-        .attr("class", "bar")
-        .attr("fill", "#800")
-        .attr("stroke", "#800")
-
-
-    //exit 
-    bars.exit()
-        .remove()
+	var x = d3.scale.ordinal()
+		.domain(data.map(function (d) { return d.Country; }))
+		.rangeBands([0, width]);
 
 
-    //apply to everything (enter and update)
-    bars
-        .attr("stroke-width", 4)
-        .attr("height", function(d,i) 
-        {
-            return y(d.value);
-        })
-        .attr("width", x.rangeBand())
-        .attr("transform", function(d,i) {
-            return "translate(" + [x(i), h - y(d.value)] + ")"
-        })
+	var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom");
 
-}
+	var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left");
+
+	svg3.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxis)
+		.selectAll("text")
+		.style("font-size", "8px")
+		.style("text-anchor", "end")
+		.attr("dx", "-.8em")
+		.attr("dy", "-.55em")
+		.attr("transform", "rotate(-90)");
 
 
-function init()
-{
+	svg3.append("g")
+		.attr("class", "y axis")
+		.call(yAxis);
 
-    //setup the svg
-    var svg = d3.select("#svg")
-        .attr("width", w+100)
-        .attr("height", h+100)
-    console.log("svg", svg)
-    svg.append("svg:rect")
-        .attr("width", "100%")
-        .attr("height", "100%")
-        .attr("stroke", "#000")
-        .attr("fill", "none")
+	svg3.selectAll("rectangle")
+		.data(data)
+		.enter()
+		.append("rect")
+		.attr("class", "rectangle")
+		.attr("width", width / data.length)
+		.attr("height", function (d) {
+			return height - y(+d[selection]);
+		})
+		.attr("x", function (d, i) {
+			return (width / data.length) * i;
+		})
+		.attr("y", function (d) {
+			return y(+d[selection]);
+		})
+		.append("title")
+		.text(function (d) {
+			return d.Country + " : " + d[selection];
+		});
 
-    svg.append("svg:g")
-        .attr("id", "barchart")
-        .attr("transform", "translate(50,50)")
-    
-}
+	var selector = d3.select("#drop")
+		.append("select")
+		.attr("id", "dropdown")
+		.on("change", function (d) {
+			selection = document.getElementById("dropdown");
+
+			y.domain([0, d3.max(data, function (d) {
+				return +d[selection.value];
+			})]);
+
+			yAxis.scale(y);
+
+			d3.selectAll(".rectangle")
+				.transition()
+				.attr("height", function (d) {
+					return height - y(+d[selection.value]);
+				})
+				.attr("x", function (d, i) {
+					return (width / data.length) * i;
+				})
+				.attr("y", function (d) {
+					return y(+d[selection.value]);
+				})
+				.ease("linear")
+				.select("title")
+				.text(function (d) {
+					return d.Country + " : " + d[selection.value];
+				});
+
+			d3.selectAll("g.y.axis")
+				.transition()
+				.call(yAxis);
+
+		});
+
+	selector.selectAll("option")
+		.data(elements)
+		.enter().append("option")
+		.attr("value", function (d) {
+			return d;
+		})
+		.text(function (d) {
+			return d;
+		})
+
+
+});
