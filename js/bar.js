@@ -23,3 +23,13 @@ d3.csv("csv/belgie.csv", function (data) {
   myChart2.addSeries(null, dimple.plot.bar);
   myChart2.draw();
 });
+
+d3.csv("csv/belgie_thuis.csv", function (data) {
+    var svg4 = dimple.newSvg("#chartContainer3", 690, 400);
+    var myChart3 = new dimple.chart(svg4, data);
+    myChart3.setBounds(200, 30, 480, 330);
+    myChart3.addMeasureAxis("x", "points");
+    var y = myChart3.addCategoryAxis("y", "home_team");
+    myChart3.addSeries(null, dimple.plot.bar);
+    myChart3.draw();
+  });
