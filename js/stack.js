@@ -2,8 +2,11 @@
 
 var n = 3, // number of layers
 m = 40, // number of samples per layer
-data = d3.layout.stack()(stream_layers(n, m, .1)),
 color = d3.interpolateRgb("#aad", "#556");
+
+d3.csv("datatest.csv", function(data) {
+    dataset = data.map(function(d) { return [ +d["team_long_name0"], +d["win_lose"] ]; });
+  });
 
 var p = 20,
 w = 960,
