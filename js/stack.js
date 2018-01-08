@@ -6,10 +6,10 @@ color = d3.interpolateRgb("#aad", "#556");
 
 dataset = [];
 
-d3.csv("csv/duitsland.csv", function(data) {
+d3.csv("csv/duitsland.csv", function(dataset) {
     dataset = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
     console.log(dataset);
-
+});
 
 var p = 20,
 w = 960,
@@ -29,7 +29,7 @@ x = function(d) { return d.x * w / mx; },
 y0 = function(d) { return h - d.y0 * h / my; },
 y1 = function(d) { return h - (d.y + d.y0) * h / my; },
 y2 = function(d) { return d.y * h / mz; }; // or `my` to not rescale
-});
+
 var vis = d3.select("#chart")
 .append("svg:svg")
 .attr("width", w)
