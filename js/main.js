@@ -40,9 +40,9 @@ $(document).ready(function(){
 
 	// build a scene
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: '#intro',
+		triggerElement: 'main',
 		duration: '90%',
-		triggerHook: 0.2
+		triggerHook: 0.8
 	})
 	.setClassToggle('#project04', 'fade-in') // add class to project01
 	.addIndicators({
