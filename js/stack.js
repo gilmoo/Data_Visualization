@@ -1,7 +1,7 @@
 
 
 var n = 3, // number of layers
-m = 20, // number of samples per layer
+m = 18, // number of samples per layer
 data = d3.layout.stack()(stream_layers(n, m, .1)),
 color = d3.interpolateRgb("#aad", "#556");
 
@@ -60,7 +60,7 @@ var labels = vis.selectAll("text.label")
 .attr("dx", x({x: .45}))
 .attr("dy", ".71em")
 .attr("text-anchor", "middle")
-.text(function(d, i) { return i; });
+.text(function(d, i) { return 'test'; });
 
 vis.append("svg:line")
 .attr("x1", 0)
