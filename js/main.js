@@ -38,8 +38,66 @@ $(document).ready(function(){
 	.setTween(parallaxTl)
 	.addTo(controller);
 
+	// build a scene
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement: '#intro',
+		duration: '90%',
+		triggerHook: 0.2
+	})
+	.setClassToggle('#project04', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) // this requires a plugin
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement: '#project04',
+		duration: '90%',
+		triggerHook: 0.0
+	})
+	.setClassToggle('#project01', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) // this requires a plugin
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement: '#chartContainer3',
+		duration: '90%',
+		triggerHook: 1
+	})
+	.setClassToggle('#project02', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) // this requires a plugin
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement: '#chartContainer3',
+		duration: '70%',
+		triggerHook: 0.0
+	})
+	.setClassToggle('#project03', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) // this requires a plugin
+	.addTo(controller);
+
+
 	// loop through each .project element
-	$('.project').each(function(){
+	/*$('.project').each(function(){
 
 		// build a scene
 		var ourScene = new ScrollMagic.Scene({
@@ -48,15 +106,16 @@ $(document).ready(function(){
 			duration: '70%'
 		})
 		.setClassToggle(this, 'fade-in') // add class to project01
-		/*.addIndicators({
+		.addIndicators({
 			name: 'fade scene',
 			colorTrigger: 'black',
 			colorStart: '#75C695',
 			colorEnd: 'pink'
-		}) // this requires a plugin */
+		}) // this requires a plugin 
 		.addTo(controller);
 
-	});
+	});*/
+
 //#endregion
 });
 
