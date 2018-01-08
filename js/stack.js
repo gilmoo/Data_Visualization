@@ -1,4 +1,4 @@
-
+/* 
 
 var n = 3, // number of layers
     m = 40, // number of samples per layer
@@ -23,7 +23,9 @@ var p = 20,
     y0 = function(d) { return h - d.y0 * h / my; },
     y1 = function(d) { return h - (d.y + d.y0) * h / my; },
     y2 = function(d) { return d.y * h / mz; }; // or `my` to not rescale
-
+*/
+    d3.csv("./csv/match_results.csv", function (error, data) {
+  
 var vis = d3.select("#chart")
   .append("svg:svg")
     .attr("width", w)
@@ -204,3 +206,4 @@ function transitionStack() {
   }
 }
 
+    });
