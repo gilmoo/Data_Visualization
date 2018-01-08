@@ -12,12 +12,12 @@ var p = 20,
 w = 960,
 h = 500 - .5 - p,
 mx = m,
-my = d3.max(data, function(d) {
+my = d3.max(dataset, function(d) {
   return d3.max(d, function(d) {
     return d.y0 + d.y;
   });
 }),
-mz = d3.max(data, function(d) {
+mz = d3.max(dataset, function(d) {
   return d3.max(d, function(d) {
     return d.y;
   });
@@ -33,7 +33,7 @@ var vis = d3.select("#chart")
 .attr("height", h + p);
 
 var layers = vis.selectAll("g.layer")
-.data(data)
+.data(dataset)
 .enter().append("svg:g")
 .style("fill", function(d, i) { return color(i / (n - 1)); })
 .attr("class", "layer");
@@ -55,7 +55,7 @@ bars.append("svg:rect")
 .attr("height", function(d) { return y0(d) - y1(d); });
 
 var labels = vis.selectAll("text.label")
-.data(data[0])
+.data(dataset[0])
 .enter().append("svg:text")
 .attr("class", "label")
 .attr("x", x)
