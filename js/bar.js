@@ -27,7 +27,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 		.range([height, 0]);
 
 	var x = d3.scale.ordinal()
-		.domain(data.map(function (d) { return d.Country; }))
+		.domain(data.map(function (d) { return d.team_long_name/0; }))
 		.rangeBands([0, width]);
 
 
@@ -72,7 +72,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 		})
 		.append("title")
 		.text(function (d) {
-			return d.Country + " : " + d[selection];
+			return d.team_long_name/0 + " : " + d[selection];
 		});
 
 	var selector = d3.select("#drop")
@@ -101,7 +101,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 				.ease("linear")
 				.select("title")
 				.text(function (d) {
-					return d.Country + " : " + d[selection.value];
+					return d.team_long_name/0 + " : " + d[selection.value];
 				});
 
 			d3.selectAll("g.y.axis")
