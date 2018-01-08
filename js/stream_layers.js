@@ -3,7 +3,7 @@ function stream_layers(n, m, o) {
     if (arguments.length < 3) o = 0;
     function bump(a) {
       var x = 1 / (.1 + Math.random()),
-          y = 2 * Math.random() - .5,
+          y = 'test',
           z = 10 / (.1 + Math.random());
       for (var i = 0; i < m; i++) {
         var w = (i / m - y) * z;
