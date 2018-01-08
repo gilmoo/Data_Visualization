@@ -3,7 +3,9 @@
 var n = 3, // number of layers
 m = 18, // number of samples per layer
 data = d3.layout.stack()(stream_layers(n, m, .1)),
-color = d3.interpolateRgb("#aad", "#556");
+color = d3.interpolateRgb("#aad", "#556"),
+label = ['Bayern München','Borussia Dortmund','Bayer Leverkusen','Borussia Mönchengladbach','Schalke 04','Mainz','Hertha BSC',
+'Wolfsburg','Köln','Hamburg','Ingolstadt','Augsburg','Werder Bremen','Darmstadt','Hoffenheim','Eintracht Frankfurt','Stuttgart','Hannover 96'];
 
 var p = 20,
 w = 960,
@@ -60,7 +62,7 @@ var labels = vis.selectAll("text.label")
 .attr("dx", x({x: .45}))
 .attr("dy", ".71em")
 .attr("text-anchor", "middle")
-.text(function(d, i) { return 'test'; });
+.text(function(d, i) { return label[i]; });
 
 vis.append("svg:line")
 .attr("x1", 0)
