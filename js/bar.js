@@ -19,14 +19,14 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .ticks(10);
 
-var svg = d3.select("#barchart").append("svg")
+var svg = d3.select("#chartContainer").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", 
           "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("csv/match_results.csv", function(error, data) {
+d3.csv("csv/duitsland.csv", function(error, data) {
 
     data.forEach(function(d) {
         d.home_team_goal = +d.home_team_goal;
