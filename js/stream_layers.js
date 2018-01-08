@@ -2,11 +2,12 @@
 function stream_layers(n, m, o) {
     if (arguments.length < 3) o = 0;
     function bump(a) {
-      var x = 'test',
+      var x = 1 / (.1 + Math.random()),
           y = 2 * Math.random() - .5,
           z = 10 / (.1 + Math.random());
       for (var i = 0; i < m; i++) {
         var w = (i / m - y) * z;
+        console.log(w);
         a[i] += x * Math.exp(-w * w);
       }
     }
