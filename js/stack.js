@@ -24,7 +24,7 @@ var p = 20,
     y1 = function(d) { return h - (d.y + d.y0) * h / my; },
     y2 = function(d) { return d.y * h / mz; }; // or `my` to not rescale
 
-  
+});
 var vis = d3.select("#chart")
   .append("svg:svg")
     .attr("width", w)
@@ -120,5 +120,5 @@ function transitionStack() {
         .attr("width", x({x: .9}));
   }
 }
-});
+
    
