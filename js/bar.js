@@ -2,13 +2,15 @@ var margin = { top: 20, right: 20, bottom: 180, left: 15 },
 	width = 960 - margin.left - margin.right + 370,
 	height = 500 - margin.top - margin.bottom + 100;
 
-var svg3 = d3.select("#chartFilter").append("svg")
+
+d3.csv("./csv/match_results.csv", function (error, data) {
+        var svg3 = d3.select("#chartFilter").append("svg")
 	.attr("width", width + margin.left + margin.right)
 	.attr("height", height + margin.top + margin.bottom)
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("./csv/match_results.csv", function (error, data) {
+
 
 
 	// filter year
