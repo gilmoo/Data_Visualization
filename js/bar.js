@@ -1,126 +1,68 @@
-var margin = { top: 20, right: 20, bottom: 180, left: 15 },
-	width = 960 - margin.left - margin.right + 370,
-	height = 500 - margin.top - margin.bottom + 100;
+var margin = {top: 20, right: 20, bottom: 70, left: 40},
+    width = 600 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
+// Parse the date / time
+var	parseDate = d3.time.format("%Y-%m").parse;
 
-d3.csv("./csv/match_results.csv", function (error, data) {
-        var svg3 = d3.select("#chartFilter").append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
-	.append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
 
+var y = d3.scale.linear().range([height, 0]);
 
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickFormat(d3.time.format("%Y-%m"));
 
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(10);
 
-	// filter year
-	//var data = data.filter(function(d){return d.Year == '2012';});
-	// Get every column value, and filter
-	var elements = Object.keys(data[0])
-		.filter(function (d) {
-			return ((d != "id") & (d != "home_team_api_id") & (d != "away_team_api_id") & (d != "team_long_name/0")& (d != "team_long_name/1"));
-		});
-	var selection = elements[0];
+var svg = d3.select("#barchart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
 
-	var y = d3.scale.linear()
-		.domain([0, d3.max(data, function (d) {
-			return +d[selection];
-		})])
-		.range([height, 0]);
+d3.csv("csv/match_results.csv", function(error, data) {
 
-	var x = d3.scale.ordinal()
-		.domain(data.map(function (d) { return d.Country; }))
-		.rangeBands([0, width]);
+    data.forEach(function(d) {
+        d.date = parseDate(d.date);
+        d.value = +d.value;
+    });
+	
+  x.domain(data.map(function(d) { return d.date; }));
+  y.domain([0, d3.max(data, function(d) { return d.value; })]);
 
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .selectAll("text")
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", "-.55em")
+      .attr("transform", "rotate(-90)" );
 
-	var xAxis = d3.svg.axis()
-		.scale(x)
-		.orient("bottom");
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Value ($)");
 
-	var yAxis = d3.svg.axis()
-		.scale(y)
-		.orient("left");
-
-	svg3.append("g")
-		.attr("class", "x axis")
-		.attr("transform", "translate(0," + height + ")")
-		.call(xAxis)
-		.selectAll("text")
-		.style("font-size", "8px")
-		.style("text-anchor", "end")
-		.attr("dx", "-.8em")
-		.attr("dy", "-.55em")
-		.attr("transform", "rotate(-90)");
-
-
-	svg3.append("g")
-		.attr("class", "y axis")
-		.call(yAxis);
-
-	svg3.selectAll("rectangle")
-		.data(data)
-		.enter()
-		.append("rect")
-		.attr("class", "rectangle")
-		.attr("width", width / data.length)
-		.attr("height", function (d) {
-			return height - y(+d[selection]);
-		})
-		.attr("x", function (d, i) {
-			return (width / data.length) * i;
-		})
-		.attr("y", function (d) {
-			return y(+d[selection]);
-		})
-		.append("title")
-		.text(function (d) {
-			return d.season + " : " + d[selection];
-		});
-
-	var selector = d3.select("#drop")
-		.append("select")
-		.attr("id", "dropdown")
-		.on("change", function (d) {
-			selection = document.getElementById("dropdown");
-
-			y.domain([0, d3.max(data, function (d) {
-				return +d[selection.value];
-			})]);
-
-			yAxis.scale(y);
-
-			d3.selectAll(".rectangle")
-				.transition()
-				.attr("height", function (d) {
-					return height - y(+d[selection.value]);
-				})
-				.attr("x", function (d, i) {
-					return (width / data.length) * i;
-				})
-				.attr("y", function (d) {
-					return y(+d[selection.value]);
-				})
-				.ease("linear")
-				.select("title")
-				.text(function (d) {
-					return d.Country + " : " + d[selection.value];
-				});
-
-			d3.selectAll("g.y.axis")
-				.transition()
-				.call(yAxis);
-
-		});
-
-	selector.selectAll("option")
-		.data(elements)
-		.enter().append("option")
-		.attr("value", function (d) {
-			return d;
-		})
-		.text(function (d) {
-			return d;
-		})
-
+  svg.selectAll("bar")
+      .data(data)
+    .enter().append("rect")
+      .style("fill", "steelblue")
+      .attr("x", function(d) { return x(d.date); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); });
 
 });

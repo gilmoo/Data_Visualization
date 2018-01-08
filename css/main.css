@@ -108,6 +108,18 @@ a {
     transition: all 1s ease-out;
 }
 
+.axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+
 .gallery {
     position: center;
     padding-left: 10%;
