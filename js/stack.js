@@ -9,7 +9,7 @@ dataset = [];
 d3.csv("csv/duitsland.csv", function(data) {
     dataset = data.map(function(d) { return [ +d["team_long_name0"], +d["win_lose"] ]; });
   });
-
+console.log(dataset);
 var p = 20,
 w = 960,
 h = 500 - .5 - p,
