@@ -3,7 +3,7 @@ var margin = {top: 20, right: 20, bottom: 70, left: 40},
     height = 300 - margin.top - margin.bottom;
 
 // Parse the date / time
-var	parseDate = d3.time.format("%Y-%m").parse;
+//var	parseDate = d3.time.format("%Y-%m").parse;
 
 var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
 
@@ -32,7 +32,7 @@ d3.csv("csv/match_results.csv", function(error, data) {
         d.home_team_goal = +d.home_team_goal;
     });
 	
-  x.domain(data.map(function(d) { return d.team_long_name/0; }));
+  x.domain(data.map(function(d) { return d.team_long_name0; }));
   y.domain([0, d3.max(data, function(d) { return d.home_team_goal; })]);
 
   svg.append("g")
@@ -59,7 +59,7 @@ d3.csv("csv/match_results.csv", function(error, data) {
       .data(data)
     .enter().append("rect")
       .style("fill", "steelblue")
-      .attr("x", function(d) { return x(d.team_long_name/0); })
+      .attr("x", function(d) { return x(d.team_long_name0); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.home_team_goal); })
       .attr("height", function(d) { return height - y(d.home_team_goal); });
