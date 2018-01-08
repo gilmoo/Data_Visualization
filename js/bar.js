@@ -1,5 +1,5 @@
-var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-	width = margin.left - margin.right + 370,
+var margin = { top: 20, right: 20, bottom: 180, left: 15 },
+	width = 960 - margin.left - margin.right + 370,
 	height = 500 - margin.top - margin.bottom + 100;
 
 var svg3 = d3.select("#chartFilter").append("svg")
@@ -16,7 +16,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 	// Get every column value, and filter
 	var elements = Object.keys(data[0])
 		.filter(function (d) {
-			return ((d != "id") & (d != "home_team_api_id") & (d != "away_team_api_id") & (d != "team_long_name/0")& (d != "team_long_name/1"));
+			return ((d != "Region") & (d != "Country") & (d != "Happiness Rank") & (d != "Standard Error"));
 		});
 	var selection = elements[0];
 
@@ -27,7 +27,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 		.range([height, 0]);
 
 	var x = d3.scale.ordinal()
-		.domain(data.map(function (d) { return d.team_long_name/0; }))
+		.domain(data.map(function (d) { return d.Country; }))
 		.rangeBands([0, width]);
 
 
@@ -72,7 +72,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 		})
 		.append("title")
 		.text(function (d) {
-			return d.team_long_name/0 + " : " + d[selection];
+			return d.Country + " : " + d[selection];
 		});
 
 	var selector = d3.select("#drop")
@@ -101,7 +101,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 				.ease("linear")
 				.select("title")
 				.text(function (d) {
-					return d.team_long_name/0 + " : " + d[selection.value];
+					return d.Country + " : " + d[selection.value];
 				});
 
 			d3.selectAll("g.y.axis")
