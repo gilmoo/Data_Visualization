@@ -15,12 +15,12 @@ d3.csv("csv/duitsland.csv", function(data) {
 w = 960,
 h = 500 - .5 - p,
 mx = m,
-my = d3.max(data, function(d) {
+my = d3.max(d3.data, function(d) {
   return d3.max(d, function(d) {
     return d.y0 + d.y;
   });
 }),
-mz = d3.max(data, function(d) {
+mz = d3.max(d3.data, function(d) {
   return d3.max(d, function(d) {
     return d.y;
   });
