@@ -39,6 +39,11 @@ var layers = vis.selectAll("g.layer")
     .enter().append("svg:g")
     .style("fill", function (d, i) { return color(i / (n - 1)); })
     .attr("class", "layer");
+    
+var color = d3.scale.linear()
+    .domain([-1, 0, 1])
+    .range(["#aaaadd", "#8080a2", "#555566"]);
+
 
 var bars = layers.selectAll("g.bar")
     .data(function (d) { return d; })
