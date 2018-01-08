@@ -7,13 +7,13 @@ function stream_layers(n, m, o) {
           z = 10 / (.1 + Math.random());
       for (var i = 0; i < m; i++) {
         var w = (i / m - y) * z;
-        a = [2000,1900,800,700,500,345,1223,1234,1800,1000,1100,1200,1234,1800,1000,1100,1200,900]
+        a[i] += x * Math.exp(-w * w);
       }
     }
-    
+   
     return d3.range(n).map(function() {
         var a = [], i;
-        for (i = 0; i < m; i++) a[i] = 1;
+        for (i = 0; i < m; i++)  a = [2000,1900,800,700,500,345,1223,1234,1800,1000,1100,1200,1234,1800,1000,1100,1200,900];
         for (i = 0; i < 5; i++) bump(a);
         return a.map(stream_index);
       });
