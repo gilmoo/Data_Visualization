@@ -29,12 +29,12 @@ var svg = d3.select("#barchart").append("svg")
 d3.csv("csv/match_results.csv", function(error, data) {
 
     data.forEach(function(d) {
-        d.date = parseDate(d.date);
-        d.value = +d.value;
+        d.season = parseDate(d.season);
+        d.home_team_goal = +d.home_team_goal;
     });
 	
-  x.domain(data.map(function(d) { return d.date; }));
-  y.domain([0, d3.max(data, function(d) { return d.value; })]);
+  x.domain(data.map(function(d) { return d.season; }));
+  y.domain([0, d3.max(data, function(d) { return d.home_team_goal; })]);
 
   svg.append("g")
       .attr("class", "x axis")
@@ -60,9 +60,9 @@ d3.csv("csv/match_results.csv", function(error, data) {
       .data(data)
     .enter().append("rect")
       .style("fill", "steelblue")
-      .attr("x", function(d) { return x(d.date); })
+      .attr("x", function(d) { return x(d.season); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.value); })
-      .attr("height", function(d) { return height - y(d.value); });
+      .attr("y", function(d) { return y(d.home_team_goal); })
+      .attr("height", function(d) { return height - y(d.home_team_goal); });
 
 });
