@@ -58,7 +58,7 @@ bars.append("svg:rect")
 .attr("height", function(d) { return y0(d) - y1(d); });
 
 var labels = vis.selectAll("text.label")
-.data(dataset[1])
+.data(dataset)
 .enter().append("svg:text")
 .attr("class", "label")
 .attr("x", x)
