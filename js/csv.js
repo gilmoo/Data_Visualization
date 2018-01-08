@@ -8,7 +8,7 @@ var prices_csv = function()
         data = prices.map(function(d)
         {
             //each d is one line of the csv file represented as a json object
-            console.log("d", d)
+            //console.log("d", d)
            // month = parse(d.month).getMonth();
            // console.log("month:", d.month, month)
             //we slice the dollar sign off then convert to a number with the + sign
