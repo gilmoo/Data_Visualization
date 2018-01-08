@@ -4,26 +4,23 @@ var n = 3, // number of layers
 m = 40, // number of samples per layer
 color = d3.interpolateRgb("#aad", "#556");
 
-dataset = [];
 
-d3.csv("csv/duitsland.csv", function(dataset) {
-    dataset = dataset.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
-    console.log(dataset);
-    return dataset;
-});
-dataset = d3.dataset;
-console.log(dataset);
+d3.csv("csv/duitsland.csv", function(data) {
+    data = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
+    console.log(data);
+  });
+ console.log(data);
 
-var p = 20,
+ var p = 20,
 w = 960,
 h = 500 - .5 - p,
 mx = m,
-my = d3.max(dataset, function(d) {
+my = d3.max(data, function(d) {
   return d3.max(d, function(d) {
     return d.y0 + d.y;
   });
 }),
-mz = d3.max(dataset, function(d) {
+mz = d3.max(data, function(d) {
   return d3.max(d, function(d) {
     return d.y;
   });
@@ -39,7 +36,7 @@ var vis = d3.select("#chart")
 .attr("height", h + p);
 
 var layers = vis.selectAll("g.layer")
-.data(dataset)
+.data(data)
 .enter().append("svg:g")
 .style("fill", function(d, i) { return color(i / (n - 1)); })
 .attr("class", "layer");
@@ -61,7 +58,7 @@ bars.append("svg:rect")
 .attr("height", function(d) { return y0(d) - y1(d); });
 
 var labels = vis.selectAll("text.label")
-.data(dataset)
+.data(data)
 .enter().append("svg:text")
 .attr("class", "label")
 .attr("x", x)
