@@ -1,18 +1,20 @@
-var n = 3, // number of layers
-    m = 40, // number of samples per layer
-    data = d3.layout.stack()(stream_layers(n, m, .1)),
-    color = d3.interpolateRgb("#aad", "#556");
 
- var p = 20,
+
+var n = 3, // number of layers
+m = 40, // number of samples per layer
+data = d3.layout.stack()(stream_layers(n, m, .1)),
+color = d3.interpolateRgb("#aad", "#556");
+
+var p = 20,
 w = 960,
 h = 500 - .5 - p,
 mx = m,
-my = d3.max(d3.data, function(d) {
+my = d3.max(data, function(d) {
   return d3.max(d, function(d) {
     return d.y0 + d.y;
   });
 }),
-mz = d3.max(d3.data, function(d) {
+mz = d3.max(data, function(d) {
   return d3.max(d, function(d) {
     return d.y;
   });
@@ -50,7 +52,7 @@ bars.append("svg:rect")
 .attr("height", function(d) { return y0(d) - y1(d); });
 
 var labels = vis.selectAll("text.label")
-.data(data)
+.data(data[0])
 .enter().append("svg:text")
 .attr("class", "label")
 .attr("x", x)
