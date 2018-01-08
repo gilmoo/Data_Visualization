@@ -4,8 +4,8 @@ var n = 3, // number of layers
     m = 18, // number of samples per layer
     data = d3.layout.stack()(stream_layers(n, m, .1)),
     color = d3.interpolateRgb("#aad", "#556"),
-    label = ['Bayern München', 'Borussia Dortmund', 'Bayer Leverkusen', 'Borussia Mönchengladbach', 'Schalke 04', 'Mainz', 'Hertha BSC',
-        'Wolfsburg', 'Köln', 'Hamburg', 'Ingolstadt', 'Augsburg', 'Werder Bremen', 'Darmstadt', 'Hoffenheim', 'Eintracht Frankfurt', 'Stuttgart', 'Hannover 96'];
+    label = ['B München', 'B Dortmund', 'B Leverkusen', 'B Mönchengladbach', 'Schalke 04', 'Mainz', 'Hertha BSC',
+        'Wolfsburg', 'Köln', 'Hamburg', 'Ingolstadt', 'Augsburg', 'Werder Bremen', 'Darmstadt', 'Hoffenheim', 'E Frankfurt', 'Stuttgart', 'Hannover 96'];
 
 var legendRectSize = 18;
 var legendSpacing = 4;
