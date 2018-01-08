@@ -92,10 +92,10 @@ legend.append('rect')
     .style('fill', color)
     .style('stroke', color);
 
-    legend.append('text')
+legend.append('text')
     .attr('x', legendRectSize + legendSpacing)
     .attr('y', legendRectSize - legendSpacing)
-    .text(function(d) { return d; });
+    .text(function (d) { return d; });
 
 function transitionGroup() {
     var group = d3.selectAll("#chart");
