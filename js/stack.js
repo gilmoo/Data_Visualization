@@ -1,15 +1,7 @@
-
-
 var n = 3, // number of layers
-m = 40, // number of samples per layer
-color = d3.interpolateRgb("#aad", "#556");
-
-
-d3.csv("csv/duitsland.csv", function(data) {
-    d3.data = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
-    console.log(data);
-  });
- console.log(d3.data);
+    m = 40, // number of samples per layer
+    data = d3.layout.stack()(stream_layers(n, m, .1)),
+    color = d3.interpolateRgb("#aad", "#556");
 
  var p = 20,
 w = 960,
