@@ -70,13 +70,33 @@ vis.append("svg:line")
 .attr("y1", h)
 .attr("y2", h);
 
-legend = vis.append("g")
-  .attr("class","legend")
-  .attr("transform","translate(50,30)")
-  .style("font-size","12px")
-  .call(d3.legend);
+var legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("x", w - 65)
+    .attr("y", 25)
+    .attr("height", 100)
+    .attr("width", 100);
 
+    legend.selectAll('g').data(dataset)
+    .enter()
+    .append('g')
+    .each(function(d, i) {
+      var g = d3.select(this);
+      g.append("rect")
+        .attr("x", w - 65)
+        .attr("y", i*25)
+        .attr("width", 10)
+        .attr("height", 10)
+        .style("fill", color_hash[String(i)][1]);
 
+      g.append("text")
+        .attr("x", w - 50)
+        .attr("y", i * 25 + 8)
+        .attr("height",30)
+        .attr("width",100)
+        .style("fill", color_hash[String(i)][1])
+        .text(color_hash[String(i)][0]);
+        
 function transitionGroup() {
 var group = d3.selectAll("#chart");
 
