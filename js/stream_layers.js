@@ -2,12 +2,12 @@
 function stream_layers(n, m, o) {
     if (arguments.length < 3) o = 0;
     function bump(a) {
-      var x = 1,
+      var x = 20,
           y = 5,
           z = 10;
       for (var i = 0; i < m; i++) {
         var w = (i / m - y) * z;
-        a[i] += x  * w;
+        a[i] += x * Math.exp(-w * w);
       }
     }
     return d3.range(n).map(function() {
