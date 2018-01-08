@@ -9,6 +9,7 @@ function stream_layers(n, m, o) {
         var w = (i / m - y) * z;
         a[i] += x * Math.exp(-w * w);
       }
+      console.log(a);
     }
     return d3.range(n).map(function() {
         var a = [], i;
