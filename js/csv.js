@@ -4,7 +4,7 @@ var prices_csv = function()
     d3.csv("csv/match_results.csv", function(prices)
     {
         //prices is an array of json objects containing the data in from the csv
-        console.log("prices:", prices)
+       // console.log("prices:", prices)
         data = prices.map(function(d)
         {
             //each d is one line of the csv file represented as a json object
