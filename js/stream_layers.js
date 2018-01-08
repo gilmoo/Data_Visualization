@@ -7,7 +7,7 @@ function stream_layers(n, m, o) {
           z = 10;
       for (var i = 0; i < m; i++) {
         var w = (i / m - y) * z;
-        a[i] += x * Math.exp(-w * w);
+        a[i] += x  * w;
       }
     }
     return d3.range(n).map(function() {
