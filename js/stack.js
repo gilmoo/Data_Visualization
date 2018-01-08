@@ -4,7 +4,7 @@ var n = 3, // number of layers
   //  data = d3.layout.stack()(stream_layers(n, m, .1)),
     color = d3.interpolateRgb("#aad", "#556");
   
-d3.csv("./csv/match_results.csv", function (error, data) {  
+d3.csv("./csv/duitsland.csv", function (error, data) {  
 var p = 20,
     w = 960,
     h = 500 - .5 - p,
