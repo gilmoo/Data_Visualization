@@ -1,4 +1,4 @@
-win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name/0,team_long_name/1
+win_lose,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,team_long_name0,team_long_name1
 3,1,9987,9993,1,1,1,2008/2009,KRC Genk,Beerschot AC
 3,2,10000,9994,0,0,1,2008/2009,SV Zulte-Waregem,Sporting Lokeren
 2,3,9984,8635,0,3,1,2008/2009,KSV Cercle Brugge,RSC Anderlecht
