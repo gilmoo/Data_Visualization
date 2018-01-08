@@ -1,7 +1,7 @@
 
 
 var n = 3, // number of layers
-m = 40, // number of samples per layer
+m = 20, // number of samples per layer
 data = d3.layout.stack()(stream_layers(n, m, .1)),
 color = d3.interpolateRgb("#aad", "#556");
 
