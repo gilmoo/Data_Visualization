@@ -84,7 +84,7 @@ function transitionGroup() {
       .duration(500)
       .delay(function(d, i) { return (i % m) * 10; })
       .attr("x", function(d, i) { return x({x: .9 * ~~(i / m) / n}); })
-      .attr("width", x({x: .9 / n}))
+      .attr("width", 10)
       .each("end", transitionEnd);
 
   function transitionEnd() {
