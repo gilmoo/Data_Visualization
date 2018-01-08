@@ -6,7 +6,7 @@ color = d3.interpolateRgb("#aad", "#556");
 
 
 d3.csv("csv/duitsland.csv", function(data) {
-    data = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
+    d3.data = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
     console.log(data);
   });
  console.log(d3.data);
