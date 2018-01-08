@@ -3,7 +3,8 @@ var n = 3, // number of layers
     m = 40, // number of samples per layer
   //  data = d3.layout.stack()(stream_layers(n, m, .1)),
     color = d3.interpolateRgb("#aad", "#556");
-    
+  
+d3.csv("./csv/match_results.csv", function (error, data) {  
 var p = 20,
     w = 960,
     h = 500 - .5 - p,
@@ -23,7 +24,6 @@ var p = 20,
     y1 = function(d) { return h - (d.y + d.y0) * h / my; },
     y2 = function(d) { return d.y * h / mz; }; // or `my` to not rescale
 
-    d3.csv("./csv/match_results.csv", function (error, data) {
   
 var vis = d3.select("#chart")
   .append("svg:svg")
