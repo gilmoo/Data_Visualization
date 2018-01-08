@@ -9,7 +9,7 @@ d3.csv("csv/duitsland.csv", function(data) {
     data = data.map(function(d) { return [ d["team_long_name0"], +d["win_lose"] ]; });
     console.log(data);
   });
- console.log(data);
+ console.log(d3.data);
 
  var p = 20,
 w = 960,
