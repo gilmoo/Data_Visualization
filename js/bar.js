@@ -16,7 +16,7 @@ d3.csv("./csv/match_results.csv", function (error, data) {
 	// Get every column value, and filter
 	var elements = Object.keys(data[0])
 		.filter(function (d) {
-			return ((d != "Region") & (d != "Country") & (d != "Happiness Rank") & (d != "Standard Error"));
+			return ((d != "id") & (d != "home_team_api_id") & (d != "away_team_api_id") & (d != "team_long_name/0")& (d != "team_long_name/1"));
 		});
 	var selection = elements[0];
 
