@@ -42,7 +42,7 @@ $(document).ready(function(){
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '#content',
 		duration: '90%',
-		triggerHook: 0.7
+		triggerHook: 0.0
 	})
 	.setClassToggle('#project04', 'fade-in') // add class to project01
 	/*.addIndicators({
@@ -70,11 +70,17 @@ $(document).ready(function(){
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: '#chartContainer3',
-		duration: '70%',
-		triggerHook: 6
+		triggerElement: '.row',
+		duration: '90%',
+		triggerHook: -7
 	})
 	.setClassToggle('#project02', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	})
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
