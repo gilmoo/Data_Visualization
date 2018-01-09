@@ -25,25 +25,55 @@
     <div id="intro">
         <img src="img/intro.jpg" />
         <div class="content">
-            <a>
+            <a4>
                 <h1>Data Visualization</h1>
                 The European soccer database.
                 <br> Applied Data Science minor.
-            </a>
+            </a4>
         </div>
     </div>
     <div id="main" class="main-container">
-        <div id="project04" class="project">
-            <div class="col-lg-4 mx-auto">
-                <h1>Intro</h1>
-                <p>Football is a sport that is played by a lot of people, in the most european countries football is the sport
-                    that is mostly watched. The football bussines these days is so big that it just became a money game.
-                    So ofcourse there are a lot of bet offices where you can bet on matches, and what would be better then
-                    to know where you should put your money? </p>
+        <div id="project04" class="project" style="text-align:center">
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <h1>Intro</h1>
+                    <div class="col-lg-4 mx-auto">
+                        <p>Football is a sport that is played by a lot of people, in the most european countries football is
+                            the sport that is watched the most of all. The football bussines these days is so big that it just became
+                            a money game. So ofcourse there are a lot of bet offices where you can bet on matches, and what
+                            would be better then to know where you should put your money? </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project05" class="project" style="text-align:center">
+            <div class="container">
+                <h2>Why this dataset?</h2>
+                <p>I play football myself, I love the game, the team play and whole atmosphere around a match. Ofcourse I also
+                    do place bets sometimes and unlucky for me I don't always win. But I wanted to find out if it's possible
+                    to make such a prediction.
+                    <br>
+                    <br> Datasetsource: </p>
+                <a href="https://www.kaggle.com/hugomathien/soccer/data">European soccer dataset</a>
+                <br>
+                <br>
+                <p>I made some plots after I made use of some machine learning techniques. The plot I made was about a teams
+                    predictability, so if you could predict wether a team would end up on becomming champion or would have
+                    to play playoffs. </p>
+                <img src="img/results.png">
+                <br>
+                <br>
+                <p>Shortly after making these plots I found out that it was really hard to make some usefull graphs in d3 with
+                    the dataset that I had chosen. This was because of the multiple many to many relationships between the
+                    tables. After I found this out, I went into an other way and that was if I could find out if there is
+                    a relation between playing home game's or away games.
+                </p>
             </div>
         </div>
         <div id="main" class="main-container">
-            <div id="project01" class="project">
+            <div id="project01" class="project" style="text-align:center">
+                <p>Below you can see the outcome off the bundesliga (season 2015/16) the bar graph is devided by the outcome
+                    of the matches.</p>
                 <h1>Match Results</h1>
                 <div class='gallery' id='chart'>
                     <a1>Won</a1>
@@ -71,37 +101,26 @@
                 </div>
             </div>
 
-            <div id="project02" class="project">
-                <div class="row">
-                    <div class="col-lg-4 mx-auto"></div>
-                    <h2> dit is een test</h2>
-                    <div class="col-lg-8 mx-auto">
-                        <h1>Total points</h1>
-                        <p id="chartContainer2"></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h1>Points from a home game</h1>
-                        <p id="chartContainer3"></p>
-                    </div>
-                    <div class="col-lg-4 mx-auto"></div>
-                    <h2> dit is een test</h2>
-                </div>
+            <div id="project02" class="project" style="text-align:center">
+                <h1>Total points</h1>
+                <p id="chartContainer2"></p>
+                <p>In the diagram above you can see the total points scored in the Belgium pro league in the season of 2015/2016</p>
+                <h1>Points from a home game</h1>
+                <p id="chartContainer3"></p>
+                <p>In the diagram above you can see how many points were scored in home games of the Belgium pro league in the season of 2015/16</p>
             </div>
         </div>
-        <!-- temp -->
-        <div id="project03" class="project">
-            <img src="img/img_project03-icon.svg" />
-            <h2>Project Title</h2>
-            <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat
-                molestie vehicula. Sed.</p>
-        </div>
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>Created by: Ruthger van den Eikhof - DS72</h3>
-            </footer>
-        </div>
+    </div>
+    <!-- temp -->
+    <div class="container" style="text-align:center">
+        <h2>Conclusion</h2>
+        <p class="info"></p>
+    </div>
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h3>Created by: Ruthger van den Eikhof - DS72</h3>
+        </footer>
+    </div>
     </div>
     <!-- #main-container -->
 

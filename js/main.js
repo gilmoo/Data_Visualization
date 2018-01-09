@@ -40,9 +40,9 @@ $(document).ready(function(){
 
 	// build a scene
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: 'main',
+		triggerElement: '#content',
 		duration: '90%',
-		triggerHook: 0.8
+		triggerHook: 0.7
 	})
 	.setClassToggle('#project04', 'fade-in') // add class to project01
 	.addIndicators({
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: '#project04',
+		triggerElement: '#project01',
 		duration: '90%',
 		triggerHook: 0.0
 	})
@@ -68,9 +68,23 @@ $(document).ready(function(){
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: '#chartContainer3',
+		triggerElement: '.container',
 		duration: '90%',
-		triggerHook: 1
+		triggerHook: 0.4
+	})
+	.setClassToggle('#project05', 'fade-in') // add class to project01
+	.addIndicators({
+		name: 'fade scene',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) // this requires a plugin
+	.addTo(controller);
+
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement: '#chartContainer3',
+		duration: '70%',
+		triggerHook: 4
 	})
 	.setClassToggle('#project02', 'fade-in') // add class to project01
 	.addIndicators({
@@ -82,7 +96,7 @@ $(document).ready(function(){
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
-		triggerElement: '#chartContainer3',
+		triggerElement: 'main',
 		duration: '70%',
 		triggerHook: 0.0
 	})
