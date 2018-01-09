@@ -1,0 +1,241 @@
+points,id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,league_id,season,home_team,team_long_name1
+0,1489,9997,8342,2,1,1,2015/2016,Club Brugge KV,Sint-Truidense VV
+0,1490,8571,9985,2,1,1,2015/2016,Standard de Liège,KV Kortrijk
+0,1491,9987,1773,3,1,1,2015/2016,Oud-Heverlee Leuven,KRC Genk
+0,1492,8573,8203,3,1,1,2015/2016,KV Mechelen,KV Oostende
+0,1493,10000,9994,3,1,1,2015/2016,Sporting Lokeren,SV Zulte-Waregem
+1,1494,10001,9991,1,1,1,2015/2016,KAA Gent,KVC Westerlo
+0,1495,8635,8475,3,2,1,2015/2016,Waasland-Beveren,RSC Anderlecht
+0,1496,9986,274581,2,1,1,2015/2016,Royal Excel Mouscron,Sporting Charleroi
+1,1497,8635,8203,1,1,1,2015/2016,KV Mechelen,RSC Anderlecht
+0,1498,9991,8342,4,1,1,2015/2016,Club Brugge KV,KAA Gent
+0,1499,9987,9985,3,1,1,2015/2016,Standard de Liège,KRC Genk
+0,1500,8573,9994,2,0,1,2015/2016,Sporting Lokeren,KV Oostende
+0,1501,9986,10000,3,0,1,2015/2016,SV Zulte-Waregem,Sporting Charleroi
+1,1502,1773,274581,1,1,1,2015/2016,Royal Excel Mouscron,Oud-Heverlee Leuven
+1,1503,10001,8571,1,1,1,2015/2016,KV Kortrijk,KVC Westerlo
+3,1504,9997,8475,1,3,1,2015/2016,Waasland-Beveren,Sint-Truidense VV
+0,1505,8342,8573,1,0,1,2015/2016,KV Oostende,Club Brugge KV
+3,1506,9985,10001,1,2,1,2015/2016,KVC Westerlo,Standard de Liège
+0,1507,8203,9997,3,0,1,2015/2016,Sint-Truidense VV,KV Mechelen
+3,1508,10000,8635,0,4,1,2015/2016,RSC Anderlecht,SV Zulte-Waregem
+3,1509,274581,9991,1,2,1,2015/2016,KAA Gent,Royal Excel Mouscron
+3,1510,9994,1773,1,2,1,2015/2016,Oud-Heverlee Leuven,Sporting Lokeren
+0,1511,8571,9986,2,0,1,2015/2016,Sporting Charleroi,KV Kortrijk
+3,1512,8475,9987,0,1,1,2015/2016,KRC Genk,Waasland-Beveren
+0,1513,8635,8342,3,1,1,2015/2016,Club Brugge KV,RSC Anderlecht
+1,1514,9991,8573,2,2,1,2015/2016,KV Oostende,KAA Gent
+3,1515,9987,274581,0,4,1,2015/2016,Royal Excel Mouscron,KRC Genk
+3,1516,8203,10000,3,4,1,2015/2016,SV Zulte-Waregem,KV Mechelen
+3,1517,9986,9985,2,3,1,2015/2016,Standard de Liège,Sporting Charleroi
+3,1518,1773,8475,0,2,1,2015/2016,Waasland-Beveren,Oud-Heverlee Leuven
+3,1519,10001,9994,1,2,1,2015/2016,Sporting Lokeren,KVC Westerlo
+0,1520,9997,8571,2,1,1,2015/2016,KV Kortrijk,Sint-Truidense VV
+0,1521,8342,1773,2,0,1,2015/2016,Oud-Heverlee Leuven,Club Brugge KV
+0,1522,9985,8203,2,1,1,2015/2016,KV Mechelen,Standard de Liège
+0,1523,8573,9987,3,2,1,2015/2016,KRC Genk,KV Oostende
+0,1524,10000,9997,4,0,1,2015/2016,Sint-Truidense VV,SV Zulte-Waregem
+1,1525,274581,10001,2,2,1,2015/2016,KVC Westerlo,Royal Excel Mouscron
+3,1526,9994,9991,1,2,1,2015/2016,KAA Gent,Sporting Lokeren
+1,1527,8571,8635,1,1,1,2015/2016,RSC Anderlecht,KV Kortrijk
+3,1528,8475,9986,0,1,1,2015/2016,Sporting Charleroi,Waasland-Beveren
+0,1529,8635,274581,2,0,1,2015/2016,Royal Excel Mouscron,RSC Anderlecht
+3,1530,9987,9994,0,2,1,2015/2016,Sporting Lokeren,KRC Genk
+0,1531,8203,8475,2,0,1,2015/2016,Waasland-Beveren,KV Mechelen
+1,1532,10000,8571,2,2,1,2015/2016,KV Kortrijk,SV Zulte-Waregem
+1,1533,9986,8573,1,1,1,2015/2016,KV Oostende,Sporting Charleroi
+3,1534,1773,9991,0,2,1,2015/2016,KAA Gent,Oud-Heverlee Leuven
+3,1535,10001,8342,0,2,1,2015/2016,Club Brugge KV,KVC Westerlo
+0,1536,9997,9985,1,0,1,2015/2016,Standard de Liège,Sint-Truidense VV
+0,1537,8342,9987,1,0,1,2015/2016,KRC Genk,Club Brugge KV
+0,1538,9985,8635,1,0,1,2015/2016,RSC Anderlecht,Standard de Liège
+3,1539,9991,9986,1,3,1,2015/2016,Sporting Charleroi,KAA Gent
+0,1540,8573,1773,3,0,1,2015/2016,Oud-Heverlee Leuven,KV Oostende
+1,1541,274581,10000,2,2,1,2015/2016,SV Zulte-Waregem,Royal Excel Mouscron
+1,1542,9994,9997,1,1,1,2015/2016,Sint-Truidense VV,Sporting Lokeren
+0,1543,8571,8203,1,0,1,2015/2016,KV Mechelen,KV Kortrijk
+1,1544,8475,10001,2,2,1,2015/2016,KVC Westerlo,Waasland-Beveren
+0,1545,8342,10000,3,0,1,2015/2016,SV Zulte-Waregem,Club Brugge KV
+1,1546,9985,8571,1,1,1,2015/2016,KV Kortrijk,Standard de Liège
+0,1547,9991,10001,5,0,1,2015/2016,KVC Westerlo,KAA Gent
+0,1548,8203,8573,2,1,1,2015/2016,KV Oostende,KV Mechelen
+3,1549,274581,9986,0,1,1,2015/2016,Sporting Charleroi,Royal Excel Mouscron
+1,1550,9994,8635,1,1,1,2015/2016,RSC Anderlecht,Sporting Lokeren
+3,1551,1773,9987,1,3,1,2015/2016,KRC Genk,Oud-Heverlee Leuven
+0,1552,8475,9997,2,1,1,2015/2016,Sint-Truidense VV,Waasland-Beveren
+0,1553,8635,1773,3,2,1,2015/2016,Oud-Heverlee Leuven,RSC Anderlecht
+3,1554,9987,9991,0,1,1,2015/2016,KAA Gent,KRC Genk
+3,1555,8203,8342,1,4,1,2015/2016,Club Brugge KV,KV Mechelen
+3,1556,10000,9985,2,3,1,2015/2016,Standard de Liège,SV Zulte-Waregem
+0,1557,8571,8475,3,1,1,2015/2016,Waasland-Beveren,KV Kortrijk
+3,1558,9986,9994,1,2,1,2015/2016,Sporting Lokeren,Sporting Charleroi
+3,1559,10001,8573,0,1,1,2015/2016,KV Oostende,KVC Westerlo
+3,1560,9997,274581,0,1,1,2015/2016,Royal Excel Mouscron,Sint-Truidense VV
+0,1561,8342,9986,2,1,1,2015/2016,Sporting Charleroi,Club Brugge KV
+1,1562,9991,10000,2,2,1,2015/2016,SV Zulte-Waregem,KAA Gent
+1,1563,9987,8635,0,0,1,2015/2016,RSC Anderlecht,KRC Genk
+3,1564,8573,9997,1,2,1,2015/2016,Sint-Truidense VV,KV Oostende
+3,1565,274581,8203,2,3,1,2015/2016,KV Mechelen,Royal Excel Mouscron
+0,1566,9994,8571,3,1,1,2015/2016,KV Kortrijk,Sporting Lokeren
+0,1567,1773,10001,5,1,1,2015/2016,KVC Westerlo,Oud-Heverlee Leuven
+1,1568,8475,9985,0,0,1,2015/2016,Standard de Liège,Waasland-Beveren
+1,1569,8635,8573,1,1,1,2015/2016,KV Oostende,RSC Anderlecht
+0,1570,9985,8342,2,0,1,2015/2016,Club Brugge KV,Standard de Liège
+1,1571,8203,9994,1,1,1,2015/2016,Sporting Lokeren,KV Mechelen
+0,1572,10000,8475,2,1,1,2015/2016,Waasland-Beveren,SV Zulte-Waregem
+3,1573,8571,274581,1,3,1,2015/2016,Royal Excel Mouscron,KV Kortrijk
+0,1574,9986,1773,2,1,1,2015/2016,Oud-Heverlee Leuven,Sporting Charleroi
+1,1575,10001,9987,0,0,1,2015/2016,KRC Genk,KVC Westerlo
+3,1576,9997,9991,0,2,1,2015/2016,KAA Gent,Sint-Truidense VV
+0,1577,9991,9987,1,0,1,2015/2016,KRC Genk,KAA Gent
+0,1578,8342,8203,3,0,1,2015/2016,KV Mechelen,Club Brugge KV
+0,1579,8475,8571,2,1,1,2015/2016,KV Kortrijk,Waasland-Beveren
+0,1580,8573,10001,2,1,1,2015/2016,KVC Westerlo,KV Oostende
+3,1581,274581,9997,0,2,1,2015/2016,Sint-Truidense VV,Royal Excel Mouscron
+1,1582,9994,9986,2,2,1,2015/2016,Sporting Charleroi,Sporting Lokeren
+0,1583,9985,10000,2,1,1,2015/2016,SV Zulte-Waregem,Standard de Liège
+3,1584,1773,8635,0,2,1,2015/2016,RSC Anderlecht,Oud-Heverlee Leuven
+3,1585,8342,8635,1,4,1,2015/2016,RSC Anderlecht,Club Brugge KV
+0,1586,9991,8571,3,0,1,2015/2016,KV Kortrijk,KAA Gent
+0,1587,9987,9997,3,0,1,2015/2016,Sint-Truidense VV,KRC Genk
+0,1588,8573,9985,4,1,1,2015/2016,Standard de Liège,KV Oostende
+3,1589,274581,8475,0,1,1,2015/2016,Waasland-Beveren,Royal Excel Mouscron
+1,1590,9994,10000,1,1,1,2015/2016,SV Zulte-Waregem,Sporting Lokeren
+0,1591,1773,8203,3,1,1,2015/2016,KV Mechelen,Oud-Heverlee Leuven
+0,1592,10001,9986,2,1,1,2015/2016,Sporting Charleroi,KVC Westerlo
+0,1593,8635,10001,2,1,1,2015/2016,KVC Westerlo,RSC Anderlecht
+0,1594,9985,274581,3,0,1,2015/2016,Royal Excel Mouscron,Standard de Liège
+0,1595,8203,9991,2,0,1,2015/2016,KAA Gent,KV Mechelen
+0,1596,10000,8573,1,0,1,2015/2016,KV Oostende,SV Zulte-Waregem
+3,1597,8571,8342,1,4,1,2015/2016,Club Brugge KV,KV Kortrijk
+0,1598,9986,9987,1,0,1,2015/2016,KRC Genk,Sporting Charleroi
+3,1599,8475,9994,2,3,1,2015/2016,Sporting Lokeren,Waasland-Beveren
+1,1600,9997,1773,2,2,1,2015/2016,Oud-Heverlee Leuven,Sint-Truidense VV
+0,1601,8342,274581,3,0,1,2015/2016,Royal Excel Mouscron,Club Brugge KV
+0,1602,9991,8635,2,0,1,2015/2016,RSC Anderlecht,KAA Gent
+0,1603,9987,10000,2,1,1,2015/2016,SV Zulte-Waregem,KRC Genk
+1,1604,8573,8475,3,3,1,2015/2016,Waasland-Beveren,KV Oostende
+3,1605,9994,9985,0,2,1,2015/2016,Standard de Liège,Sporting Lokeren
+1,1606,9986,9997,0,0,1,2015/2016,Sint-Truidense VV,Sporting Charleroi
+0,1607,1773,8571,1,0,1,2015/2016,KV Kortrijk,Oud-Heverlee Leuven
+0,1608,10001,8203,3,2,1,2015/2016,KV Mechelen,KVC Westerlo
+0,1609,8635,9986,2,1,1,2015/2016,Sporting Charleroi,RSC Anderlecht
+3,1610,9985,9991,0,3,1,2015/2016,KAA Gent,Standard de Liège
+1,1611,8203,9987,1,1,1,2015/2016,KRC Genk,KV Mechelen
+1,1612,10000,1773,2,2,1,2015/2016,Oud-Heverlee Leuven,SV Zulte-Waregem
+1,1613,274581,9994,1,1,1,2015/2016,Sporting Lokeren,Royal Excel Mouscron
+0,1614,8571,8573,2,1,1,2015/2016,KV Oostende,KV Kortrijk
+3,1615,8475,8342,1,2,1,2015/2016,Club Brugge KV,Waasland-Beveren
+3,1616,9997,10001,1,2,1,2015/2016,KVC Westerlo,Sint-Truidense VV
+0,1617,8342,9994,2,1,1,2015/2016,Sporting Lokeren,Club Brugge KV
+0,1618,9991,8475,2,1,1,2015/2016,Waasland-Beveren,KAA Gent
+0,1619,9987,8571,1,0,1,2015/2016,KV Kortrijk,KRC Genk
+1,1620,8573,274581,3,3,1,2015/2016,Royal Excel Mouscron,KV Oostende
+0,1621,9986,8203,3,2,1,2015/2016,KV Mechelen,Sporting Charleroi
+3,1622,1773,9985,0,2,1,2015/2016,Standard de Liège,Oud-Heverlee Leuven
+3,1623,10001,10000,1,2,1,2015/2016,SV Zulte-Waregem,KVC Westerlo
+3,1624,9997,8635,1,2,1,2015/2016,RSC Anderlecht,Sint-Truidense VV
+0,1625,8342,9991,1,0,1,2015/2016,KAA Gent,Club Brugge KV
+3,1626,9985,9997,1,2,1,2015/2016,Sint-Truidense VV,Standard de Liège
+1,1627,8203,8635,2,2,1,2015/2016,RSC Anderlecht,KV Mechelen
+3,1628,10000,9986,2,3,1,2015/2016,Sporting Charleroi,SV Zulte-Waregem
+3,1629,274581,9987,0,1,1,2015/2016,KRC Genk,Royal Excel Mouscron
+3,1630,9994,8573,0,1,1,2015/2016,KV Oostende,Sporting Lokeren
+1,1631,8571,10001,1,1,1,2015/2016,KVC Westerlo,KV Kortrijk
+1,1632,8475,1773,2,2,1,2015/2016,Oud-Heverlee Leuven,Waasland-Beveren
+0,1633,8635,10000,3,0,1,2015/2016,SV Zulte-Waregem,RSC Anderlecht
+0,1634,9991,274581,2,0,1,2015/2016,Royal Excel Mouscron,KAA Gent
+0,1635,9987,8475,6,1,1,2015/2016,Waasland-Beveren,KRC Genk
+3,1636,8573,8342,0,2,1,2015/2016,Club Brugge KV,KV Oostende
+1,1637,9986,8571,1,1,1,2015/2016,KV Kortrijk,Sporting Charleroi
+1,1638,1773,9994,3,3,1,2015/2016,Sporting Lokeren,Oud-Heverlee Leuven
+0,1639,10001,9985,2,0,1,2015/2016,Standard de Liège,KVC Westerlo
+3,1640,9997,8203,0,3,1,2015/2016,KV Mechelen,Sint-Truidense VV
+0,1641,8342,10001,6,0,1,2015/2016,KVC Westerlo,Club Brugge KV
+0,1642,9985,9986,3,0,1,2015/2016,Sporting Charleroi,Standard de Liège
+0,1643,8573,9991,5,2,1,2015/2016,KAA Gent,KV Oostende
+3,1644,10000,8203,2,3,1,2015/2016,KV Mechelen,SV Zulte-Waregem
+0,1645,274581,1773,3,1,1,2015/2016,Oud-Heverlee Leuven,Royal Excel Mouscron
+1,1646,9994,9987,0,0,1,2015/2016,KRC Genk,Sporting Lokeren
+0,1647,8571,9997,3,0,1,2015/2016,Sint-Truidense VV,KV Kortrijk
+0,1648,8475,8635,1,0,1,2015/2016,RSC Anderlecht,Waasland-Beveren
+1,1649,8635,9985,3,3,1,2015/2016,Standard de Liège,RSC Anderlecht
+0,1650,9991,9994,3,1,1,2015/2016,Sporting Lokeren,KAA Gent
+0,1651,9987,8342,3,2,1,2015/2016,Club Brugge KV,KRC Genk
+3,1652,8203,8571,0,2,1,2015/2016,KV Kortrijk,KV Mechelen
+3,1653,9986,8475,2,3,1,2015/2016,Waasland-Beveren,Sporting Charleroi
+0,1654,1773,8573,4,1,1,2015/2016,KV Oostende,Oud-Heverlee Leuven
+1,1655,10001,274581,2,2,1,2015/2016,Royal Excel Mouscron,KVC Westerlo
+3,1656,9997,10000,1,2,1,2015/2016,SV Zulte-Waregem,Sint-Truidense VV
+0,1657,8342,9997,3,0,1,2015/2016,Sint-Truidense VV,Club Brugge KV
+0,1658,9985,9987,2,1,1,2015/2016,KRC Genk,Standard de Liège
+1,1659,9991,1773,1,1,1,2015/2016,Oud-Heverlee Leuven,KAA Gent
+0,1660,8573,9986,2,1,1,2015/2016,Sporting Charleroi,KV Oostende
+0,1661,274581,8635,2,1,1,2015/2016,RSC Anderlecht,Royal Excel Mouscron
+0,1662,9994,10001,2,1,1,2015/2016,KVC Westerlo,Sporting Lokeren
+0,1663,8571,10000,1,0,1,2015/2016,SV Zulte-Waregem,KV Kortrijk
+1,1664,8475,8203,0,0,1,2015/2016,KV Mechelen,Waasland-Beveren
+1,1665,10000,9987,0,0,1,2015/2016,KRC Genk,SV Zulte-Waregem
+1,1666,8571,9994,0,0,1,2015/2016,Sporting Lokeren,KV Kortrijk
+0,1667,10001,1773,3,2,1,2015/2016,Oud-Heverlee Leuven,KVC Westerlo
+1,1668,9997,8573,1,1,1,2015/2016,KV Oostende,Sint-Truidense VV
+0,1669,8203,274581,3,1,1,2015/2016,Royal Excel Mouscron,KV Mechelen
+1,1670,8635,9991,1,1,1,2015/2016,KAA Gent,RSC Anderlecht
+1,1671,9986,8342,0,0,1,2015/2016,Club Brugge KV,Sporting Charleroi
+0,1672,9985,8475,1,0,1,2015/2016,Waasland-Beveren,Standard de Liège
+0,1673,8635,8571,3,0,1,2015/2016,KV Kortrijk,RSC Anderlecht
+0,1674,9987,8573,4,1,1,2015/2016,KV Oostende,KRC Genk
+0,1675,8203,9985,4,0,1,2015/2016,Standard de Liège,KV Mechelen
+0,1676,10000,274581,3,0,1,2015/2016,Royal Excel Mouscron,SV Zulte-Waregem
+1,1677,9986,9991,1,1,1,2015/2016,KAA Gent,Sporting Charleroi
+3,1678,1773,8342,0,1,1,2015/2016,Club Brugge KV,Oud-Heverlee Leuven
+0,1679,10001,8475,1,0,1,2015/2016,Waasland-Beveren,KVC Westerlo
+1,1680,9997,9994,1,1,1,2015/2016,Sporting Lokeren,Sint-Truidense VV
+0,1681,8342,8571,2,1,1,2015/2016,KV Kortrijk,Club Brugge KV
+1,1682,274581,9985,1,1,1,2015/2016,Standard de Liège,Royal Excel Mouscron
+0,1683,9994,8203,2,0,1,2015/2016,KV Mechelen,Sporting Lokeren
+0,1684,8475,10000,2,1,1,2015/2016,SV Zulte-Waregem,Waasland-Beveren
+0,1685,9987,10001,2,1,1,2015/2016,KVC Westerlo,KRC Genk
+0,1686,8573,8635,3,1,1,2015/2016,RSC Anderlecht,KV Oostende
+0,1687,9991,9997,1,0,1,2015/2016,Sint-Truidense VV,KAA Gent
+0,1688,1773,9986,2,0,1,2015/2016,Sporting Charleroi,Oud-Heverlee Leuven
+0,1689,8635,9994,1,0,1,2015/2016,Sporting Lokeren,RSC Anderlecht
+3,1690,9985,8573,1,2,1,2015/2016,KV Oostende,Standard de Liège
+0,1691,8203,1773,2,1,1,2015/2016,Oud-Heverlee Leuven,KV Mechelen
+0,1692,10000,8342,2,0,1,2015/2016,Club Brugge KV,SV Zulte-Waregem
+1,1693,8571,9991,0,0,1,2015/2016,KAA Gent,KV Kortrijk
+1,1694,9986,10001,0,0,1,2015/2016,KVC Westerlo,Sporting Charleroi
+1,1695,8475,274581,3,3,1,2015/2016,Royal Excel Mouscron,Waasland-Beveren
+0,1696,9997,9987,3,1,1,2015/2016,KRC Genk,Sint-Truidense VV
+0,1697,8342,9985,7,1,1,2015/2016,Standard de Liège,Club Brugge KV
+0,1698,9987,9986,2,0,1,2015/2016,Sporting Charleroi,KRC Genk
+1,1699,9991,8203,2,2,1,2015/2016,KV Mechelen,KAA Gent
+0,1700,1773,9997,1,0,1,2015/2016,Sint-Truidense VV,Oud-Heverlee Leuven
+3,1701,9994,8475,1,2,1,2015/2016,Waasland-Beveren,Sporting Lokeren
+3,1702,274581,8571,0,1,1,2015/2016,KV Kortrijk,Royal Excel Mouscron
+3,1703,8573,10000,0,2,1,2015/2016,SV Zulte-Waregem,KV Oostende
+3,1704,10001,8635,0,3,1,2015/2016,RSC Anderlecht,KVC Westerlo
+1,1705,8635,9987,0,0,1,2015/2016,KRC Genk,RSC Anderlecht
+3,1706,9985,9994,0,1,1,2015/2016,Sporting Lokeren,Standard de Liège
+1,1707,8203,10001,2,2,1,2015/2016,KVC Westerlo,KV Mechelen
+1,1708,10000,9991,1,1,1,2015/2016,KAA Gent,SV Zulte-Waregem
+0,1709,274581,8342,2,1,1,2015/2016,Club Brugge KV,Royal Excel Mouscron
+1,1710,8571,1773,0,0,1,2015/2016,Oud-Heverlee Leuven,KV Kortrijk
+3,1711,8475,8573,1,5,1,2015/2016,KV Oostende,Waasland-Beveren
+1,1712,9997,9986,1,1,1,2015/2016,Sporting Charleroi,Sint-Truidense VV
+0,1713,8342,8475,5,1,1,2015/2016,Waasland-Beveren,Club Brugge KV
+0,1714,9991,9985,4,1,1,2015/2016,Standard de Liège,KAA Gent
+0,1715,9987,8203,3,1,1,2015/2016,KV Mechelen,KRC Genk
+0,1716,8573,8571,1,0,1,2015/2016,KV Kortrijk,KV Oostende
+3,1717,9994,274581,1,2,1,2015/2016,Royal Excel Mouscron,Sporting Lokeren
+1,1718,9986,8635,1,1,1,2015/2016,RSC Anderlecht,Sporting Charleroi
+3,1719,1773,10000,2,3,1,2015/2016,SV Zulte-Waregem,Oud-Heverlee Leuven
+3,1720,10001,9997,0,3,1,2015/2016,Sint-Truidense VV,KVC Westerlo
+0,1721,8635,9997,1,0,1,2015/2016,Sint-Truidense VV,RSC Anderlecht
+1,1722,9985,1773,2,2,1,2015/2016,Oud-Heverlee Leuven,Standard de Liège
+3,1723,8203,9986,0,1,1,2015/2016,Sporting Charleroi,KV Mechelen
+0,1724,10000,10001,4,2,1,2015/2016,KVC Westerlo,SV Zulte-Waregem
+1,1725,274581,8573,2,2,1,2015/2016,KV Oostende,Royal Excel Mouscron
+3,1726,9994,8342,0,1,1,2015/2016,Club Brugge KV,Sporting Lokeren
+0,1727,8571,9987,1,0,1,2015/2016,KRC Genk,KV Kortrijk
+3,1728,8475,9991,1,3,1,2015/2016,KAA Gent,Waasland-Beveren
