@@ -75,12 +75,6 @@ $(document).ready(function(){
 		triggerHook: -7
 	})
 	.setClassToggle('#project02', 'fade-in') // add class to project01
-	.addIndicators({
-		name: 'fade scene',
-		colorTrigger: 'black',
-		colorStart: '#75C695',
-		colorEnd: 'pink'
-	})
 	.addTo(controller);
 
 	var ourScene = new ScrollMagic.Scene({
